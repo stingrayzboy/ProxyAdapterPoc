@@ -17,10 +17,13 @@ class HomeController < ApplicationController
   def bulk_create
     #get a array of blogs
     # use activerecord import
-    blogs = params["blogs"].to_json
+    blogs = JSON.parse params["blogs"].to_json
+    blogs.map! do |blog|
+      Blog.new blog
+    end
     Blog.load_schema
     p blogs
-    result = Blog.import JSON.parse blogs
+    result = Blog.import  blogs
     render json: result.to_json
   end
 
