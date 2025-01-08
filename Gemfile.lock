@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/stingrayzboy/activerecord-import
-  revision: e86249be66f7200c8cdd22b8068dab69c037a3e7
+  revision: fe3bf4aaac6381644fe3c9f34bac295d0899d535
   branch: Add-Support-for-Active-Record-Proxy-Adapters
   specs:
     activerecord-import (2.1.0)
@@ -93,7 +93,7 @@ GEM
       racc
     builder (3.3.0)
     concurrent-ruby (1.3.4)
-    connection_pool (2.4.1)
+    connection_pool (2.5.0)
     crass (1.0.6)
     database_cleaner (2.1.0)
       database_cleaner-active_record (>= 2, < 3)
