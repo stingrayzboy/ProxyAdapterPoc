@@ -25,3 +25,13 @@ development:
     <<: *local
     database: adczar_development
     replica: true
+
+test:
+  primary:
+    <<: *local
+    adapter: postgresql_proxy
+    database: adczar_test
+  replica:
+    <<: *local
+    database: adczar_test
+    replica: true

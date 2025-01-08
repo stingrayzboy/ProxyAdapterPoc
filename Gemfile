@@ -42,6 +42,11 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem 'timecop'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails', '~> 7.1.0'
+  gem 'database_cleaner'
+  gem 'temping'
 end
 
 
