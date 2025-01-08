@@ -22,7 +22,6 @@ class HomeController < ApplicationController
       Blog.new blog
     end
     Blog.load_schema
-    p blogs
     result = Blog.import  blogs
     render json: result.to_json
   end
