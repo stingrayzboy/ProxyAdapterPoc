@@ -44,7 +44,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem 'timecop'
   gem 'factory_bot_rails'
-  gem 'rspec-rails', '~> 7.1.0'
+  gem 'rspec-rails', '~> 7.1.1'
   gem 'database_cleaner'
   gem 'temping'
 end
